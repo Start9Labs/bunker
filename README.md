@@ -10,6 +10,8 @@ The application will store files in multiple ways:
 
 Each file will have a configurable "redundancy level" (how many copies to keep with peers) and an option as to whether to keep a local copy on the device. Files that are not kept locally will be hashed to a merkel root, which will be used to verify ownership of the data by other peers.
 
+Files will be identified to peers by the hash of their path along with entropy derived from their mnemonic.
+
 The remaining allocated space will be used to store files for peers, prioritizing first exchanging for files stored on their server, then prioritizing for highest fees per byte.
 
 The device will keep a manifest file that it also duplicates with high redundancy. This file will be at a fixed path (/MANIFEST.db) and it will contain a list of all files kept, their merkel proofs, redundancy levels, and which peers have which files. It is also recommended this file be backed up by other means.
