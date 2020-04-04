@@ -1,4 +1,4 @@
-# bunker
+# Bunker
 Peer to Peer Encypted File Storage with Lightning Micro-Payments
 
 ## Outline
