@@ -29,3 +29,4 @@ If the device is corrupted, destroyed, or lost, and it needs a full recovery, it
 ## Open Questions
 - How can we design things to prevent nodes from detecting and price gouging those in recovery scenarios?
 - What other mechanisms can we use to back up the MANIFEST.db or a more minimal version of it (just the peer list). OP_RETURN?
+- How do we tell the difference between a misbehaving peer and network connectivity issues?
